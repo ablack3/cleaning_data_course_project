@@ -27,6 +27,7 @@ I don’t have the expertise to adequately explain these variables but I will do
 "tBodyAcc.mean...Z"
 
 "tBodyAcc.std...X"
+
 "tBodyAcc.std...Y"
 
 "tBodyAcc.std...Z"

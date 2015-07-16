@@ -55,13 +55,12 @@ column_indicies <- grep(regex, names(data))
 tidy_data <- data[, c(1,2,column_indicies)]
 
 # save the tidy data set as a csv
-write.csv(tidy_data, file="./tidy_data.csv", )
+write.table(tidy_data, file="./UCI_HAR_tidy.txt", row.names=FALSE)
 
 
 # Note:
 # To read in data, set working directory to directory containing tidy_data.csv and run the following command:
-# data <- read.csv("./tidy_data.csv")
-
+# data <- read.table("./UCI_HAR_tidy.txt", header=TRUE)
 
 
 

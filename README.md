@@ -7,9 +7,9 @@ This R script creates a tidy data set from the raw UCI smartphone data. It requi
 - Label the activities with descriptive variable names such as "LAYING", "SITTING", ect.
 - Rename the variables in the data with meaningful variable names taken from features.txt document
 - Subsets the data selecting only variables that contain the substring "mean" or "std" using a regular expression
-- Saves the data as a csv file named tidy_data.csv in the "UCI HAR Dataset" folder
+- Saves the data as a text file named UCI_HAR_tidy.txt in the working directory
 
-The output file, tidy_data.csv, meets the requirements of this assignment because it has 
+The output file, UCI_HAR_tidy.txt, meets the requirements of this assignment because it has 
 - one variable per column
 - one observation per row
 - descriptive variable names
@@ -18,4 +18,4 @@ The output file, tidy_data.csv, meets the requirements of this assignment becaus
 The variable names are not all that meaninful to me but I am assuming they would make sense to a final user of the data. I chose to keep any varible that had the substring "mean" or "std" because I wanted to be sure that all means and standard deviations were included.
 
 ## CodeBook.md
-This document describes all of the varibles in tidy_data.csv
+This document describes all of the variables in UCI_HAR_tidy.txt

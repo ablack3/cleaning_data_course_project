@@ -7,8 +7,19 @@ Abstract: Human Activity Recognition database built from the recordings of 30 su
 
 I don’t have the expertise to adequately explain these variables but I will do my best. The subject_ID is the id of the subject performing the activity. The measurements are taken from the cell phone’s gyroscope and accelerometer. The prefix t denotes time domain measurements while the prefix f denoted frequency domain measurements. The suffixs X, Y,Z refer to measurements on the X, Y and Z axes. I believe that the term body refers to measurements that have had gravitational force removed. All of the measurements have been normalized to the interval [0,1].
 
+## Description of data from the original data file
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
-### Identifying Variables
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
+
+These signals were used to estimate variables of the feature vector for each pattern:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
+Only the means and standard deviations of the measurements are retained in this dataset.
+
+## Identifying Variables
 "subject_ID" - ID for the subject performing the activity
 
 "activity" - Activity of daily living that was performed
@@ -19,7 +30,7 @@ I don’t have the expertise to adequately explain these variables but I will do
 - "WALKING_DOWNSTAIRS"
 - "WALKING_UPSTAIRS"  
 
-### Measurements
+## Measurements
 "tBodyAcc.mean...X"
 
 "tBodyAcc.mean...Y"
